@@ -22,7 +22,7 @@ case $choice in
 	
 2) echo "enter the file to be removed \c"
 	read r1
-	if { -f $r1]
+	if [ -f $r1 ]
 	then
 		rm -i $r1
 	else "$r1 file does not exist \c"
@@ -33,7 +33,7 @@ case $choice in
 	read f1
 	echo"enter destination \c"
 	read f2
-	if [-f $f1 && -d $f2]
+	if [ -f $f1 && -d $f2 ]
 		then
 			mv $f1 $f2
 		
@@ -46,7 +46,7 @@ case $choice in
 	echo "enter the file name to find difference of two files \c"
 	        read f1 , f2
 		       
-if [-f $f1]
+if [ -f $f1 ]
 then
 	diff $f1 $f2
 
